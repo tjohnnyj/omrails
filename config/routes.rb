@@ -1,5 +1,6 @@
 Omrails::Application.routes.draw do
-  get "pages/home"
+  get "about" => 'pages#about'
+  root :to => 'pages#home'  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -40,6 +41,7 @@ Omrails::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
+
   
   # Example resource route with concerns:
   #   concern :toggleable do
