@@ -1,4 +1,9 @@
-<div class="hero-unit">
-    <h1>This is the homepage for our website</h1>
-    <p>We are doing the one-month rails course at <%= link_to "http://www.onemonthrails.com", "http://onemonthrails.com", class: "btn btn-primary btn-large" %></p>
-</div>
+<% if user_signed_in? %> 
+  <h1>You are logged in!!!</h1>
+<% else %>
+
+  <div class="hero-unit">
+      <h1>This is the homepage for our website</h1>
+      <p>We are doing the one-month rails course at <%= link_to "sign up", new_user_registration_path, class: "btn btn-primary btn-large" %></p>
+  </div>
+<% end %>
