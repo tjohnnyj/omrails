@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'devise'
 gem 'simple_form'
+
+# critical to actuall precompile all the assets in a rails 4 app. TODO
 gem 'rails_12factor'
 
 
