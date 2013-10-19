@@ -5,7 +5,8 @@ class PinsController < ApplicationController
   # GET /pins
   # GET /pins.json
   def index
-    @pins = Pin.all
+  #change the order of display to show the newest images first
+    @pins = Pin.order("created_at desc")
   end
 
   # GET /pins/1
