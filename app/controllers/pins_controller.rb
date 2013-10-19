@@ -21,7 +21,7 @@ class PinsController < ApplicationController
 
   # GET /pins/1/edit
   def edit
-    @pin = current_user.pins.find(params[:id])
+    @pin = current_user.pins.find(pin_params)
   end
 
   # POST /pins
@@ -72,7 +72,7 @@ class PinsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pin_params
-      params.require(:pin).permit([:description, :image])
+      params.require(:pin).permit([:description, :image, :user_id])
 
     end
 end
