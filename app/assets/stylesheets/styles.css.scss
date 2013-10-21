@@ -11,15 +11,6 @@ $navbarBackground: white;
 @import 'bootstrap';
 @import 'bootstrap-responsive';
 
-body  {
-  padding-top:60px;
-}
-
-.navbar-inner	{
-	@include box-shadow(none !important);
-	border:0;
-}
-
 .box	{
 	margin:5px;
 	padding:5px;
@@ -44,3 +35,13 @@ body  {
 .description	{
 	margin:10px 0 5px;
 }
+
+body  {
+  padding-top:60px;
+}
+
+.navbar-inner	{
+	@include box-shadow(none !important);
+	border:0;
+}
+
