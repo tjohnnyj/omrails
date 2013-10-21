@@ -8,9 +8,6 @@ $navbarBackgroundHighlight: white;
 $navbarBackground: white;
 
 
-@import 'bootstrap';
-@import 'bootstrap-responsive';
-
 .box	{
 	margin:5px;
 	padding:5px;
@@ -45,3 +42,5 @@ body  {
 	border:0;
 }
 
+@import 'bootstrap';
+@import 'bootstrap-responsive';
