@@ -7,11 +7,12 @@ gem 'simple_form'
 gem 'paperclip'
 
 # critical to actuall precompile all the assets in a rails 4 app. TODO
-gem 'rails_12factor'
+
 
 
 group :production do
   gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :development, :test do
