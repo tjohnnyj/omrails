@@ -4,6 +4,11 @@
     <%= pin.description %>
   </p>
   <p>
+    <strong>
+      Posted by <%= pin.user.name %>
+    </strong>  
+  </p>
+  <p>
     <%= link_to 'Show', pin %>
     <% if current_user == pin.user %>
       <%= link_to 'Edit', edit_pin_path(pin) %>
